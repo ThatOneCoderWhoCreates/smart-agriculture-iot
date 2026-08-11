@@ -1,0 +1,167 @@
+{
+  "rows": 30180,
+  "period": [
+    "2026-03-01 01:00:00",
+    "2026-03-21 23:59:00"
+  ],
+  "invalid_readings_repaired": 220,
+  "descriptive": {
+    "temperature_c": {
+      "count": 30180.0,
+      "mean": 28.328,
+      "std": 6.002,
+      "min": 14.0,
+      "5%": 19.0,
+      "25%": 23.0,
+      "50%": 29.0,
+      "75%": 33.0,
+      "95%": 38.0,
+      "max": 60.0,
+      "skew": -0.004,
+      "kurtosis": -0.957,
+      "cv_%": 21.189
+    },
+    "humidity_pct": {
+      "count": 30180.0,
+      "mean": 50.059,
+      "std": 18.639,
+      "min": 0.0,
+      "5%": 27.0,
+      "25%": 35.0,
+      "50%": 46.0,
+      "75%": 63.0,
+      "95%": 88.0,
+      "max": 100.0,
+      "skew": 0.706,
+      "kurtosis": -0.265,
+      "cv_%": 37.234
+    },
+    "soil_moisture_pct": {
+      "count": 30180.0,
+      "mean": 48.92,
+      "std": 9.971,
+      "min": 0.0,
+      "5%": 34.9,
+      "25%": 41.64,
+      "50%": 50.73,
+      "75%": 56.99,
+      "95%": 60.02,
+      "max": 100.0,
+      "skew": -0.629,
+      "kurtosis": 1.211,
+      "cv_%": 20.382
+    },
+    "light_pct": {
+      "count": 30180.0,
+      "mean": 22.942,
+      "std": 30.016,
+      "min": 0.0,
+      "5%": 0.0,
+      "25%": 0.0,
+      "50%": 2.25,
+      "75%": 42.82,
+      "95%": 87.98,
+      "max": 100.0,
+      "skew": 1.1,
+      "kurtosis": -0.075,
+      "cv_%": 130.835
+    },
+    "water_level_pct": {
+      "count": 30180.0,
+      "mean": 62.797,
+      "std": 21.048,
+      "min": 0.0,
+      "5%": 19.5,
+      "25%": 51.75,
+      "50%": 65.5,
+      "75%": 78.0,
+      "95%": 94.75,
+      "max": 100.0,
+      "skew": -0.389,
+      "kurtosis": -0.484,
+      "cv_%": 33.518
+    }
+  },
+  "pearson_sensors": {
+    "temperature_c": {
+      "temperature_c": 1.0,
+      "humidity_pct": -0.9315,
+      "soil_moisture_pct": -0.3617,
+      "light_pct": 0.6647,
+      "water_level_pct": 0.1417
+    },
+    "humidity_pct": {
+      "temperature_c": -0.9315,
+      "humidity_pct": 1.0,
+      "soil_moisture_pct": 0.2433,
+      "light_pct": -0.5807,
+      "water_level_pct": -0.102
+    },
+    "soil_moisture_pct": {
+      "temperature_c": -0.3617,
+      "humidity_pct": 0.2433,
+      "soil_moisture_pct": 1.0,
+      "light_pct": -0.3579,
+      "water_level_pct": 0.1788
+    },
+    "light_pct": {
+      "temperature_c": 0.6647,
+      "humidity_pct": -0.5807,
+      "soil_moisture_pct": -0.3579,
+      "light_pct": 1.0,
+      "water_level_pct": 0.2378
+    },
+    "water_level_pct": {
+      "temperature_c": 0.1417,
+      "humidity_pct": -0.102,
+      "soil_moisture_pct": 0.1788,
+      "light_pct": 0.2378,
+      "water_level_pct": 1.0
+    }
+  },
+  "temp_leads_drying_minutes": 0,
+  "outlier_screening": [
+    {
+      "sensor": "temperature_c",
+      "iqr_outliers": 1,
+      "global_z_outliers": 1,
+      "rolling_z_outliers": 13,
+      "pct_rolling": 0.043
+    },
+    {
+      "sensor": "humidity_pct",
+      "iqr_outliers": 0,
+      "global_z_outliers": 0,
+      "rolling_z_outliers": 14,
+      "pct_rolling": 0.046
+    },
+    {
+      "sensor": "soil_moisture_pct",
+      "iqr_outliers": 560,
+      "global_z_outliers": 583,
+      "rolling_z_outliers": 62,
+      "pct_rolling": 0.205
+    },
+    {
+      "sensor": "light_pct",
+      "iqr_outliers": 0,
+      "global_z_outliers": 0,
+      "rolling_z_outliers": 375,
+      "pct_rolling": 1.243
+    },
+    {
+      "sensor": "water_level_pct",
+      "iqr_outliers": 56,
+      "global_z_outliers": 0,
+      "rolling_z_outliers": 93,
+      "pct_rolling": 0.308
+    }
+  ],
+  "statistical_detector_precision": 0.2681,
+  "statistical_detector_recall": 0.0877,
+  "class_balance": {
+    "irrigation_required_pos_rate": 0.246,
+    "agronomic_demand_pos_rate": 0.1543,
+    "anomaly_rate": 0.0559
+  }
+}

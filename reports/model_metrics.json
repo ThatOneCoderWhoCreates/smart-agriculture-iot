@@ -1,0 +1,334 @@
+{
+  "M1_classifier": {
+    "accuracy": 0.9781649245063879,
+    "precision": 0.9216467463479415,
+    "recall": 0.8432563791008505,
+    "f1": 0.8807106598984772,
+    "roc_auc": 0.9969906538002007,
+    "avg_precision": 0.9734502554993095,
+    "oob_score": 0.9967966573816156,
+    "confusion_matrix": [
+      [
+        7728,
+        59
+      ],
+      [
+        129,
+        694
+      ]
+    ],
+    "support_pos_test": 823,
+    "n_test": 8610,
+    "baseline_current_threshold_rule": {
+      "accuracy": 0.9069686411149825,
+      "precision": 1.0,
+      "recall": 0.026731470230862697,
+      "f1": 0.05207100591715976
+    },
+    "baseline_logreg": {
+      "accuracy": 0.9159117305458769,
+      "f1": 0.6934801016088061
+    },
+    "comparison_task_pump_state_t30": {
+      "rf": {
+        "accuracy": 0.9609756097560975,
+        "f1": 0.9063022866703848,
+        "roc_auc": 0.9885698748008077
+      },
+      "persistence": {
+        "accuracy": 0.9651567944250871,
+        "f1": 0.9211770888071467
+      },
+      "rf_in_transition_region": {
+        "n": 910,
+        "accuracy": 0.8516483516483516,
+        "f1": 0.8471121177802945
+      },
+      "persistence_in_transition_region": {
+        "accuracy": 0.6703296703296703,
+        "f1": 0.6703296703296703
+      }
+    },
+    "timeseries_cv_f1": {
+      "folds": [
+        0.9646,
+        0.9333,
+        0.8326,
+        0.1673,
+        0.9497
+      ],
+      "mean": 0.7694679605091145,
+      "std": 0.30462856673714184
+    },
+    "tautological_rule_label_accuracy": 0.997444831591173,
+    "top_gini_importance": {
+      "soil_moisture_pct": 0.13126,
+      "deficit_from_target": 0.12863,
+      "soil_lag_5": 0.10881,
+      "light_ma_120": 0.08709,
+      "soil_ma_30": 0.06528,
+      "soil_lag_15": 0.0568,
+      "light_lag_15": 0.05122,
+      "light_pct": 0.04525,
+      "et_proxy": 0.0404,
+      "soil_lag_30": 0.0279,
+      "water_level_pct": 0.02718,
+      "temperature_c": 0.0257,
+      "temp_ma_30": 0.0224,
+      "hour_cos": 0.02055,
+      "vpd_hpa": 0.01974
+    },
+    "top_permutation_importance": {
+      "light_ma_120": 0.02335,
+      "light_pct": 0.01965,
+      "light_lag_15": 0.01425,
+      "water_level_pct": 0.01345,
+      "soil_ma_120": 0.01265,
+      "deficit_from_target": 0.01014,
+      "soil_moisture_pct": 0.00868,
+      "soil_lag_30": 0.0078,
+      "soil_lag_15": 0.00626,
+      "soil_std_60": 0.00625,
+      "hour_sin": 0.00566,
+      "soil_ma_30": 0.00472,
+      "soil_lag_5": 0.00426,
+      "et_proxy": 0.00366,
+      "soil_rate_60": 0.00344
+    }
+  },
+  "M2_regressor": {
+    "mae": 0.8577700809485636,
+    "rmse": 1.9417036941498118,
+    "r2": 0.947994640095935,
+    "oob_r2": 0.9989665169668793,
+    "mape_pct": 1.8809203895246929,
+    "max_abs_error": 14.054668254021564,
+    "pct_within_1": 81.85830429732869,
+    "pct_within_2": 90.97560975609757,
+    "baseline_persistence": {
+      "mae": 1.4954802970556837,
+      "rmse": 3.2264108661139046,
+      "r2": 0.8564108793661692
+    },
+    "skill_score_vs_persistence": 0.6378182436489408,
+    "baseline_linear_extrapolation": {
+      "mae": 1.7042714009867745,
+      "rmse": 4.549091726161416
+    },
+    "top_gini_importance": {
+      "deficit_from_target": 0.35536,
+      "soil_moisture_pct": 0.28741,
+      "soil_ma_30": 0.12207,
+      "soil_lag_5": 0.10843,
+      "soil_lag_15": 0.06839,
+      "soil_lag_30": 0.01275,
+      "soil_lag_60": 0.00976,
+      "soil_rate_60": 0.00634,
+      "soil_ma_120": 0.00462,
+      "pump_on_last_60": 0.0033,
+      "hour_cos": 0.00218,
+      "minute_of_day": 0.00216,
+      "pump_lag_15": 0.00197,
+      "light_pct": 0.00192,
+      "et_proxy": 0.00174
+    },
+    "top_permutation_importance": {
+      "deficit_from_target": 2.48214,
+      "soil_moisture_pct": 1.81171,
+      "soil_lag_60": 1.40291,
+      "soil_ma_30": 0.2627,
+      "soil_lag_5": 0.12822,
+      "soil_rate_60": 0.09332,
+      "minute_of_day": 0.07695,
+      "pump_on_last_60": 0.06055,
+      "hour_sin": 0.01894,
+      "et_proxy": 0.01853,
+      "pump_lag_15": 0.01821,
+      "pump_status": 0.01484,
+      "pump_lag_1": 0.01441,
+      "soil_std_60": 0.01149,
+      "light_pct": 0.00838
+    }
+  },
+  "M3_isolation_forest": {
+    "contamination": 0.05,
+    "accuracy": 0.9228803716608595,
+    "precision": 0.3264659270998415,
+    "recall": 0.46292134831460674,
+    "f1": 0.3828996282527881,
+    "roc_auc": 0.8360216600039908,
+    "avg_precision": 0.22986406655385083,
+    "confusion_matrix": [
+      [
+        7740,
+        425
+      ],
+      [
+        239,
+        206
+      ]
+    ],
+    "test_anomaly_rate": 0.05168408826945412,
+    "flag_rate": 0.07328687572590012,
+    "recall_by_fault_family": {
+      "drift": 0.2819,
+      "dropout": 0.0,
+      "spike": 1.0,
+      "stuck": 0.7076
+    },
+    "recall_by_fault_type": {
+      "drift:soil_moisture_pct": {
+        "n": 227,
+        "recall": 0.28193832599118945
+      },
+      "dropout:humidity_pct": {
+        "n": 19,
+        "recall": 0.0
+      },
+      "dropout:soil_moisture_pct": {
+        "n": 7,
+        "recall": 0.0
+      },
+      "spike:humidity_pct": {
+        "n": 5,
+        "recall": 1.0
+      },
+      "spike:soil_moisture_pct": {
+        "n": 13,
+        "recall": 1.0
+      },
+      "spike:water_level_pct": {
+        "n": 3,
+        "recall": 1.0
+      },
+      "stuck:light_pct": {
+        "n": 49,
+        "recall": 0.8571428571428571
+      },
+      "stuck:temperature_c": {
+        "n": 82,
+        "recall": 0.5121951219512195
+      },
+      "stuck:water_level_pct": {
+        "n": 40,
+        "recall": 0.925
+      }
+    },
+    "layer1_validity_check": {
+      "recall_on_dropouts": 1.0,
+      "flagged": 26,
+      "precision": 1.0,
+      "recall": 0.058426966292134834
+    },
+    "combined_stack": {
+      "precision": 0.3531202435312024,
+      "recall": 0.5213483146067416,
+      "f1": 0.42105263157894735,
+      "accuracy": 0.9259001161440186
+    },
+    "contextual_faults_only": {
+      "precision": 0.3264659270998415,
+      "recall": 0.4916467780429594,
+      "f1": 0.3923809523809524,
+      "roc_auc": 0.8697391362807957
+    },
+    "event_level": {
+      "n_events": 14,
+      "events_detected": 11,
+      "event_detection_rate": 0.7857142857142857,
+      "median_latency_min": 3.0,
+      "by_type": {
+        "drift": {
+          "n": 2,
+          "detected": 2,
+          "median_latency": 30.5
+        },
+        "dropout": {
+          "n": 3,
+          "detected": 0,
+          "median_latency": NaN
+        },
+        "spike": {
+          "n": 5,
+          "detected": 5,
+          "median_latency": 0.0
+        },
+        "stuck": {
+          "n": 4,
+          "detected": 4,
+          "median_latency": 8.0
+        }
+      }
+    },
+    "best_percentile_threshold": {
+      "flag_pct": 9.0,
+      "threshold": -0.01035,
+      "f1": 0.4
+    }
+  },
+  "_meta": {
+    "seed": 42,
+    "train_days": 15,
+    "n_train": 21540,
+    "n_test": 8610,
+    "n_features_full": 37,
+    "n_features_if": 16,
+    "features_full": [
+      "temperature_c",
+      "humidity_pct",
+      "soil_moisture_pct",
+      "light_pct",
+      "water_level_pct",
+      "hour_sin",
+      "hour_cos",
+      "minute_of_day",
+      "is_daytime",
+      "soil_lag_5",
+      "soil_lag_15",
+      "soil_lag_30",
+      "soil_lag_60",
+      "temp_lag_15",
+      "temp_lag_30",
+      "hum_lag_15",
+      "light_lag_15",
+      "soil_rate_15",
+      "soil_rate_60",
+      "temp_rate_15",
+      "water_rate_30",
+      "soil_ma_30",
+      "soil_ma_120",
+      "temp_ma_30",
+      "temp_ma_120",
+      "light_ma_120",
+      "temp_std_60",
+      "soil_std_60",
+      "vpd_hpa",
+      "et_proxy",
+      "heat_index_proxy",
+      "water_available",
+      "deficit_from_target",
+      "pump_status",
+      "pump_lag_1",
+      "pump_lag_15",
+      "pump_on_last_60"
+    ],
+    "features_if": [
+      "temperature_c_flat_run",
+      "humidity_pct_flat_run",
+      "soil_moisture_pct_flat_run",
+      "light_pct_flat_run",
+      "water_level_pct_flat_run",
+      "temperature_c_dev_360",
+      "humidity_pct_dev_360",
+      "soil_moisture_pct_dev_360",
+      "light_pct_dev_360",
+      "water_level_pct_dev_360",
+      "soil_moisture_pct_mono60",
+      "humidity_pct_mono60",
+      "water_level_pct_mono60",
+      "q_dev_360",
+      "hydro_residual",
+      "tank_residual"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+# The dashboard ships its own theme system (dashboard/theme.py) with a
+# Light / Dark / Match system control in the sidebar, so the base theme is left
+# unpinned and Streamlit's own appearance menu keeps working too.
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

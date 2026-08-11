@@ -1,0 +1,4 @@
+# Wokwi library manifest — these are fetched automatically when the sim starts.
+DHT sensor library for ESPx
+LiquidCrystal I2C
+ThingSpeak

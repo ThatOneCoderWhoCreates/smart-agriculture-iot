@@ -1,0 +1,19 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Large regenerable data. The dashboard reads the .csv.gz copies, which ARE
+# committed; these uncompressed originals are rebuilt by `bash run_all.sh`.
+data/processed_dataset.csv
+data/test_predictions.csv
+
+# Optional: uncomment to keep the repo smaller still. Both are inputs to the
+# pipeline rather than the app, and 01_generate_dataset.py recreates them
+# deterministically from SEED = 42.
+# data/sensor_data_raw.csv
+# data/ground_truth.csv
