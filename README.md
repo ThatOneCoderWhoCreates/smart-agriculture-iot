@@ -2,6 +2,8 @@
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smartagriculture-using-iot.streamlit.app/)
 
+Made by: Tanmay Gautam (2548559)
+
 A complete, runnable implementation: simulated field node → cloud telemetry → dataset →
 analytics → three ML models → operations dashboard.
 
