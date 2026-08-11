@@ -1,5 +1,7 @@
 # IoT-Based Smart Agriculture System with ML-Driven Irrigation Prediction and Anomaly Detection
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smartagriculture-using-iot.streamlit.app/)
+
 A complete, runnable implementation: simulated field node → cloud telemetry → dataset →
 analytics → three ML models → operations dashboard.
 
